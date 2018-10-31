@@ -1,0 +1,7 @@
+{
+  "name": "GTA_Sergio_Jose",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
