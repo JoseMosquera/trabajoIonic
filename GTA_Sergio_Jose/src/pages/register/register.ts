@@ -26,4 +26,8 @@ export class RegisterPage {
     
   }
 
+  cancelar(){
+    this.navCtrl.push('LoginPage');
+  }
+
 }
