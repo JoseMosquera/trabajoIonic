@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 
+
 @IonicPage()
 @Component({
   selector: 'page-home',
@@ -30,5 +31,27 @@ export class HomePage {
      
     });
   }
+
+  logout(){
+    this.afAuth.auth.signOut();
+  }
+
+  irPaginaCalendario(){
+    this.navCtrl.push('CalendarioPage');
+  }
+
+  irPaginaEquipo(){
+    this.navCtrl.push('EquipoPage');
+  }
+
+  irPaginaJugadores(){
+    this.navCtrl.push('JugadoresPage');
+  }
+
+  irPaginaJornadas(){
+    this.navCtrl.push('JornadasPage');
+  }
+
+
 
 }

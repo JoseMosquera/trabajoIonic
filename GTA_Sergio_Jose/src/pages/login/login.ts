@@ -25,17 +25,13 @@ export class LoginPage {
       if(result){
         this.navCtrl.setRoot('HomePage');
       }
-      
+        
     }catch(e){
       console.error(e);
     }
 
     
 
-  }
-
-  register(){
-    this.navCtrl.push('RegisterPage');
   }
 
 }

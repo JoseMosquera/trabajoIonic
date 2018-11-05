@@ -9,22 +9,26 @@ import { MyApp } from './app.component';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { LoginPage } from '../pages/login/login';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+//import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
     MyApp, 
     LoginPage
+    
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     LoginPage
+    
   ],
   providers: [
     StatusBar,

@@ -14,5 +14,32 @@
 
 
 <ion-content padding>
+    
+    <ion-list>
+      <ion-item (click)="irPaginaCalendario()">
+        <ion-icon name="calendar" item-start></ion-icon>
+          Calendario
+      </ion-item>
+
+      <ion-item (click)="irPaginaEquipo()">
+        <ion-icon name="people" item-start></ion-icon>
+          Equipo
+      </ion-item>
+
+      <ion-item (click)="irPaginaJugadores()">
+        <ion-icon name="person" item-start></ion-icon>
+          Jugadores
+      </ion-item>
+
+      <ion-item (click)="irPaginaJornadas()">
+        <ion-icon name="clipboard" item-start></ion-icon>
+          Jornadas
+      </ion-item>
+
+    </ion-list>
+
+    <button ion-button (click)="logout()">Cerrar Sesión</button>
+    
+
 
 </ion-content>
