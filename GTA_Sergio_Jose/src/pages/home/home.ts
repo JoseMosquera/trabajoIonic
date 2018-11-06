@@ -18,7 +18,7 @@ export class HomePage {
       if(data.email && data.uid){
         this.toast.create({
           message: 'BIENVENIDO A LA APLICACION',
-          duration: 3000
+          duration: 4000
         }).present();
 
       }else{
@@ -34,6 +34,7 @@ export class HomePage {
 
   logout(){
     this.afAuth.auth.signOut();
+    //this.afAuth.getInstance().signOut();
   }
 
   irPaginaCalendario(){
