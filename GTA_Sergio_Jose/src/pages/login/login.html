@@ -15,15 +15,30 @@
 
 <ion-content padding>
 
-  <ion-item>
-    <ion-label floating>Email</ion-label>
-      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
-  </ion-item>
+  <ion-list>
+    <form>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input
+          [(ngModel)]="user.email"
+          name="email"
+          type="text"
+          autocapitalize="off"
+          required>
+        </ion-input>
+      </ion-item>
 
-  <ion-item>
-      <ion-label floating>Contraseña</ion-label>
-        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label floating>Contraseña</ion-label>
+        <ion-input
+          [(ngModel)]="user.password"
+          name="password"
+          type="password"
+          required>
+        </ion-input>
+      </ion-item>
+    </form>
+  </ion-list>
 
   <br>
 

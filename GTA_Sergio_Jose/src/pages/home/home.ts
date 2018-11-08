@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { AuthProvider } from '../../providers/auth/auth';
 
 
 @IonicPage()
@@ -10,31 +11,20 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private afAuth:AngularFireAuth, private toast:ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private afAuth:AngularFireAuth, private toast:ToastController,
+    public auth:AuthProvider) {
   }
 
   ionViewDidLoad() {
-    this.afAuth.authState.subscribe(data => {
-      if(data.email && data.uid){
-        this.toast.create({
-          message: 'BIENVENIDO A LA APLICACION',
-          duration: 4000
-        }).present();
+    this.toast.create({
+      message: 'BIENVENIDO A LA APLICACIÓN',
+      duration: 4000
+    }).present();
 
-      }else{
-        this.toast.create({
-          message: 'Error en la autentificacion.',
-          duration: 3000
-        }).present();
-
-      }
-     
-    });
   }
 
-  logout(){
-    this.afAuth.auth.signOut();
-    //this.afAuth.getInstance().signOut();
+  cerrarSesion(){
+    this.auth.logout();
   }
 
   irPaginaCalendario(){

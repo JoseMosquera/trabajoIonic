@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user';
-import { AngularFireAuth } from 'angularfire2/auth';
+//import { AngularFireAuth } from 'angularfire2/auth';
 import { AlertController } from 'ionic-angular';
+import { AuthProvider } from '../../providers/auth/auth';
 
 @IonicPage()
 @Component({
@@ -11,9 +12,11 @@ import { AlertController } from 'ionic-angular';
 })
 export class LoginPage {
 
-  user = { } as User;
+  user = { email:'', password:'' } as User;
+  
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private afAuth:AngularFireAuth, private alertCtrl:AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl:AlertController,
+    public auth:AuthProvider) {
   }
 
   ionViewDidLoad() {
@@ -29,15 +32,22 @@ export class LoginPage {
     alert.present();
   }
 
-  showAlertFail() {
-    const alert = this.alertCtrl.create({
-      title: 'Info!',
-      subTitle: 'El usuario o contraseña son incorrectos.',
-      buttons: ['OK']
-    });
-    alert.present();
+  login()
+  {
+    this.auth.loginUser(this.user.email,this.user.password ).then((user) => {
+      }
+    )
+     .catch(err=>{
+      let alert = this.alertCtrl.create({
+        title: 'Error',
+        subTitle: "El usuario o contraseña son incorrectos.",
+        buttons: ['OK']
+      });
+      alert.present();
+    })
   }
 
+  /*
   async login(user:User){
 
     try{
@@ -50,6 +60,9 @@ export class LoginPage {
       this.showAlertFail();
 
     }
+    
 
-}
+  }
+  */
+
 }
