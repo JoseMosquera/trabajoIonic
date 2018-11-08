@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the JugadoresPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { JUGADORES } from "../../data/data.jugadores";
+import { Jugador } from "../../interfaces/jugador.interfaces";
 
 @IonicPage()
 @Component({
@@ -15,7 +10,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JugadoresPage {
 
+  jugadores:Jugador[]=[];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.jugadores = JUGADORES.slice(0);
+    console.log(this.jugadores);
   }
 
   ionViewDidLoad() {
