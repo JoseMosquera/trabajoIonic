@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Jugadores</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="cerrarModal()">Cerrar</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let jugador of jugadores">
+          <h2>
+            {{ jugador.nombre }}
+          </h2>
+        </button>
+      </ion-list>
+</ion-content>

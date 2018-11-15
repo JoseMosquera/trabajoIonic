@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ModalOptions } from 'ionic-angular';
 import { EQUIPOS } from "../../data/data.equipos";
 import { Equipo } from "../../interfaces/equipos.interfaces";
 import { JUGADORES } from "../../data/data.jugadores";
@@ -14,8 +14,9 @@ export class EquipoPage {
 
   equipos:Equipo[] = [];
   jugadores:Jugador[]=[];
+  jugadoresEquipo:any[] = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController) {
     this.equipos = EQUIPOS.slice(0);
     this.jugadores = JUGADORES.slice(0);
     console.log(this.equipos);
@@ -26,14 +27,17 @@ export class EquipoPage {
   }
 
   mostrarJugadores(id){
-    console.log(id);
-    let jugadoresEquipo:any[] = [];
     for (let i = 0; i < this.jugadores.length; i++) {
       if (this.jugadores[i].idEquipo==id) {
-        jugadoresEquipo.push(this.jugadores[i].nombre);
+        this.jugadoresEquipo.push(this.jugadores[i]);
       }
     }
-    console.log(jugadoresEquipo);
-    return jugadoresEquipo;
+
+    const myModalOptions: ModalOptions = {
+      enableBackdropDismiss: false
+    }
+
+    const modalEquipo = this.modal.create('ModalEquipo', {data: this.jugadoresEquipo}, myModalOptions);
+    modalEquipo.present();
   }
 }

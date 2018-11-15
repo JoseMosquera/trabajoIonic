@@ -10,6 +10,8 @@ import { MyApp } from './app.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthProvider } from '../providers/auth/auth';
 //import { HomePage } from '../pages/home/home';
+import { HttpModule } from '@angular/http';
+import { PopoverEquipoPage } from '../pages/popover-equipo/popover-equipo';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB21kexYxz9wrwyAakBGnGOvWm2KpCbwD8",
@@ -22,11 +24,12 @@ export const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    MyApp
-    
+    MyApp,
+    PopoverEquipoPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule
@@ -34,7 +37,8 @@ export const firebaseConfig = {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    PopoverEquipoPage
   ],
   providers: [
     StatusBar,
