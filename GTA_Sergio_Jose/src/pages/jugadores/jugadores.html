@@ -2,17 +2,69 @@
 
   <ion-navbar>
     <ion-title>Jugadores</ion-title>
+    <ion-buttons end>
+        <button ion-button [navPush]="addJugador">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let jugador of jugadores">
-      <h2>
+  <ion-grid>
+    <ion-row>
+    <ion-col col-3 col-sm>
+        Nombre
+      </ion-col>
+      <ion-col col-1 col-sm>
+        J
+      </ion-col>
+      <ion-col col-1 col-sm>
+        V
+      </ion-col>
+      <ion-col col-1 col-sm>
+        E
+      </ion-col>
+      <ion-col col-1 col-sm>
+        D
+      </ion-col>
+      <ion-col col-1 col-sm>
+        C
+      </ion-col>
+      <ion-col col-1 col-sm>
+        F
+      </ion-col>
+      <ion-col col-2 col-sm>
+        Ptos
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let jugador of listjugadores">
+      <ion-col col-3 col-sm>
         {{ jugador.nombre }}
-      </h2>
-    </ion-item>
-  </ion-list>
+      </ion-col>
+      <ion-col col-1 col-sm>
+        {{ jugador.j }}
+      </ion-col>
+      <ion-col col-1 col-sm>
+        {{ jugador.g }}
+      </ion-col>
+      <ion-col col-1 col-sm>
+        {{ jugador.e }}
+      </ion-col>
+      <ion-col col-1 col-sm>
+        {{ jugador.p }}
+      </ion-col>
+      <ion-col col-1 col-sm>
+        {{ jugador.c }}
+      </ion-col>
+      <ion-col col-1 col-sm>
+        {{ jugador.f }}
+      </ion-col>
+      <ion-col col-2 col-sm>
+        {{ jugador.ptos }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

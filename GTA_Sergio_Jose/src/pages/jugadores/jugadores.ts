@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { JUGADORES } from "../../data/data.jugadores";
-import { Jugador } from "../../interfaces/jugador.interfaces";
+import { DatosProvider } from "../../providers/datos/datos";
 
 @IonicPage()
 @Component({
@@ -10,15 +9,14 @@ import { Jugador } from "../../interfaces/jugador.interfaces";
 })
 export class JugadoresPage {
 
-  jugadores:Jugador[]=[];
+  listjugadores:any
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.jugadores = JUGADORES.slice(0);
+  constructor(public navCtrl: NavController, public navParams: NavParams, private jugadores: DatosProvider) {
+    this.listjugadores = jugadores.jugadores;
     console.log(this.jugadores);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JugadoresPage');
-  }
-
+  }  
 }

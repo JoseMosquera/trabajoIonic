@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, ModalOptions } from 'ionic-angular';
-import { EQUIPOS } from "../../data/data.equipos";
-import { Equipo } from "../../interfaces/equipos.interfaces";
-import { JUGADORES } from "../../data/data.jugadores";
-import { Jugador } from "../../interfaces/jugador.interfaces";
+import { DatosProvider } from "../../providers/datos/datos";
 
 @IonicPage()
 @Component({
@@ -12,14 +9,9 @@ import { Jugador } from "../../interfaces/jugador.interfaces";
 })
 export class EquipoPage {
 
-  equipos:Equipo[] = [];
-  jugadores:Jugador[]=[];
-  jugadoresEquipo:any[] = [];
+  jugadoresEquipo:any
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController) {
-    this.equipos = EQUIPOS.slice(0);
-    this.jugadores = JUGADORES.slice(0);
-    console.log(this.equipos);
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController, public datos: DatosProvider) {
   }
 
   ionViewDidLoad() {
@@ -27,9 +19,9 @@ export class EquipoPage {
   }
 
   mostrarJugadores(id){
-    for (let i = 0; i < this.jugadores.length; i++) {
-      if (this.jugadores[i].idEquipo==id) {
-        this.jugadoresEquipo.push(this.jugadores[i]);
+    for (let i = 0; i < this.datos.jugadores.length; i++) {
+      if (this.datos.jugadores[i].idEquipo==id) {
+        this.jugadoresEquipo.push(this.datos.jugadores[i]);
       }
     }
 

@@ -12,6 +12,7 @@ import { AuthProvider } from '../providers/auth/auth';
 //import { HomePage } from '../pages/home/home';
 import { HttpModule } from '@angular/http';
 import { PopoverEquipoPage } from '../pages/popover-equipo/popover-equipo';
+import { DatosProvider } from '../providers/datos/datos';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB21kexYxz9wrwyAakBGnGOvWm2KpCbwD8",
@@ -44,7 +45,8 @@ export const firebaseConfig = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    AuthProvider,
+    DatosProvider
   ]
 })
 export class AppModule {}

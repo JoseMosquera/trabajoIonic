@@ -39,4 +39,5 @@ export const JUGADORES = [
 {nombre:"Antonio", id:19, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0},
 
 {nombre:"Pilar", id:20, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0}
+
 ];

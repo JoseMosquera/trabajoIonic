@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>addJugador</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+      <ion-label floating>Titulo:</ion-label>
+      <ion-input name="nombre" [navParam]="addJugador()"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Descropcion:</ion-label>
+      <ion-input name="descripcion" [navParam]="notas.descripcion"></ion-input>
+    </ion-item>
+  
+    <button ion-button block clear (click)="addNotas()">Añadir</button>
+</ion-content>
