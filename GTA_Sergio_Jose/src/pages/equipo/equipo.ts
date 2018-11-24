@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, ModalOptions } from 'ionic-angular';
 import { DatosProvider } from "../../providers/datos/datos";
 import { Jugador } from '../../interfaces/jugador.interfaces';
+import { TitularesPage } from "../titulares/titulares";
 
 @IonicPage()
 @Component({
@@ -14,6 +15,15 @@ export class EquipoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
               private modal: ModalController, public equipos: DatosProvider) {
+    equipos.jugadores.sort(function (a, b) {
+      if (a.ptos > b.ptos) {
+        return -1;
+      }
+      if (a.ptos < b.ptos) {
+        return 1;
+      }
+      return 0;
+    });;
     this.listaEquipos = equipos.equipos;
   }
 
@@ -32,11 +42,13 @@ export class EquipoPage {
 
     console.log(jugadoresEquipo);
 
-    const myModalOptions: ModalOptions = {
-      enableBackdropDismiss: false
-    }
+    this.navCtrl.push(TitularesPage, {"jugadores": jugadoresEquipo }); 
 
-    const modalEquipo = this.modal.create('ModalEquipo', {data: jugadoresEquipo}, myModalOptions);
-    modalEquipo.present();
+    // const myModalOptions: ModalOptions = {
+    //   enableBackdropDismiss: false
+    // }
+
+    // const modalEquipo = this.modal.create('ModalEquipo', {data: jugadoresEquipo}, myModalOptions);
+    // modalEquipo.present();
   }
 }

@@ -17,6 +17,15 @@ export class AddJugadorPage {
   idJugador:number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public jugadores: DatosProvider ) {
+    jugadores.jugadores.sort(function (a, b) {
+      if (a.ptos > b.ptos) {
+        return -1;
+      }
+      if (a.ptos < b.ptos) {
+        return 1;
+      }
+      return 0;
+    });;
     this.idJugador = jugadores.jugadores.length+1;
   }
 

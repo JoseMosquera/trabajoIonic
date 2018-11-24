@@ -23,6 +23,15 @@ export class EditJugadorPage {
   jugador:{} = {};
   
   constructor(public navCtrl: NavController, public navParams: NavParams, private jugadores: DatosProvider) {
+    jugadores.jugadores.sort(function (a, b) {
+      if (a.ptos > b.ptos) {
+        return -1;
+      }
+      if (a.ptos < b.ptos) {
+        return 1;
+      }
+      return 0;
+    });;
     this.jugador = this.navParams.get("jugador");
     console.log(this.jugador);
   }

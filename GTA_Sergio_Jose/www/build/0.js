@@ -45,7 +45,7 @@ var ModalEquipoPageModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalEquipoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(45);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -64,6 +64,8 @@ var ModalEquipoPage = /** @class */ (function () {
         this.navParams = navParams;
         this.view = view;
         this.listaJugadores = listaJugadores;
+        this.jugadores = [];
+        this.jugador = [];
     }
     ModalEquipoPage.prototype.ionViewWillLoad = function () {
         this.jugadores = this.navParams.get('data');
@@ -90,12 +92,11 @@ var ModalEquipoPage = /** @class */ (function () {
     };
     ModalEquipoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modal-equipo',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\modal-equipo\modal-equipo.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Seleccionar jugadores titulares</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="cerrarModal()">Cerrar</button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list>\n        <h1>Titulares</h1>\n        <ion-item *ngFor="let jugador of jugadores">\n          <div  *ngIf=" jugador.titular == true">\n            <ion-label>hola</ion-label>\n            <!-- <ion-input type="button" (click)="titulares"></ion-input> -->\n          </div>\n        </ion-item>\n    </ion-list>\n    <ion-list>\n        <h1>Suplentes</h1>\n        <ion-item *ngFor="let jugador of jugadores">\n          <div  *ngIf=" jugador.titular == false">\n            <ion-label>{{ jugador.nombre }}</ion-label>\n            <!-- <ion-input type="button" (click)="titulares"></ion-input> -->\n          </div>\n        </ion-item>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\modal-equipo\modal-equipo.html"*/,
+            selector: 'page-modal-equipo',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\modal-editTitular\modal-equipo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Titulares del Equipo</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list>\n        <h1>Titulares</h1>\n        <div *ngFor="let jugador of jugadores">\n          <ion-item  *ngIf=" jugador.titular == true">\n            <ion-label>{{ jugador.nombre }}</ion-label>\n          </ion-item>\n          </div>\n    </ion-list>\n    <ion-list>\n        <h1>Suplentes</h1>\n        <div *ngFor="let jugador of jugadores">\n          <ion-item  *ngIf=" jugador.titular == false">\n            <ion-label>{{ jugador.nombre }}</ion-label>\n          </ion-item>\n        </div>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\modal-editTitular\modal-equipo.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]])
     ], ModalEquipoPage);
     return ModalEquipoPage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=modal-equipo.js.map

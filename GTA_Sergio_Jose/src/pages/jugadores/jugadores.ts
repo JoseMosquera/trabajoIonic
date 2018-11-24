@@ -26,12 +26,6 @@ export class JugadoresPage {
       }
       return 0;
     });;
-    // for (let i = 0; i < jugadores.jugadores.length; i++) {
-    //   if (i==0) {
-    //     i+=1
-    //   }
-      
-    // }
     this.listjugadores = jugadores.jugadores;
     console.log(this.jugadores);
   }

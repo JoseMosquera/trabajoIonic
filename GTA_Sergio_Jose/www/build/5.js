@@ -5,10 +5,10 @@ webpackJsonp([5],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PopoverEquipoPageModule", function() { return PopoverEquipoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TitularesPageModule", function() { return TitularesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_equipo__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__titulares__ = __webpack_require__(350);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PopoverEquipoPageModule = /** @class */ (function () {
-    function PopoverEquipoPageModule() {
+var TitularesPageModule = /** @class */ (function () {
+    function TitularesPageModule() {
     }
-    PopoverEquipoPageModule = __decorate([
+    TitularesPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__popover_equipo__["a" /* PopoverEquipoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__titulares__["a" /* TitularesPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__popover_equipo__["a" /* PopoverEquipoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__titulares__["a" /* TitularesPage */]),
             ],
         })
-    ], PopoverEquipoPageModule);
-    return PopoverEquipoPageModule;
+    ], TitularesPageModule);
+    return TitularesPageModule;
 }());
 
-//# sourceMappingURL=popover-equipo.module.js.map
+//# sourceMappingURL=titulares.module.js.map
 
 /***/ })
 
