@@ -13,6 +13,8 @@ import { AuthProvider } from '../providers/auth/auth';
 import { HttpModule } from '@angular/http';
 import { PopoverEquipoPage } from '../pages/popover-equipo/popover-equipo';
 import { DatosProvider } from '../providers/datos/datos';
+import { AddJugadorPage } from "../pages/add-jugador/add-jugador";
+import { EditJugadorPage } from "../pages/edit-jugador/edit-jugador";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB21kexYxz9wrwyAakBGnGOvWm2KpCbwD8",
@@ -26,7 +28,9 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    PopoverEquipoPage
+    PopoverEquipoPage,
+    AddJugadorPage,
+    EditJugadorPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    PopoverEquipoPage
+    PopoverEquipoPage,
+    AddJugadorPage,
+    EditJugadorPage
   ],
   providers: [
     StatusBar,

@@ -9,14 +9,14 @@
 
 <ion-content padding>
   <ion-item>
-      <ion-label floating>Titulo:</ion-label>
-      <ion-input name="nombre" [navParam]="addJugador()"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label floating>Descropcion:</ion-label>
-      <ion-input name="descripcion" [navParam]="notas.descripcion"></ion-input>
-    </ion-item>
-  
-    <button ion-button block clear (click)="addNotas()">Añadir</button>
+    <ion-label floating>Nombre:</ion-label>
+    <ion-input [(ngModel)]="nombre" name="nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Equipo(1, 2, 3 o 4):</ion-label>
+    <ion-input type="number" [(ngModel)]="equipo"  name="equipo"></ion-input>
+  </ion-item>
+
+  <button ion-button block clear (click)="addJugador()">Añadir</button>
 </ion-content>

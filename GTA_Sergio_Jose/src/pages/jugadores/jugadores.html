@@ -40,8 +40,8 @@
         Ptos
       </ion-col>
     </ion-row>
-    <ion-row *ngFor="let jugador of listjugadores">
-      <ion-col col-3 col-sm>
+    <ion-row *ngFor="let jugador of listjugadores" >
+      <ion-col col-3 col-sm >
         {{ jugador.nombre }}
       </ion-col>
       <ion-col col-1 col-sm>
@@ -62,9 +62,20 @@
       <ion-col col-1 col-sm>
         {{ jugador.f }}
       </ion-col>
-      <ion-col col-2 col-sm>
+      <ion-col col-1 col-sm>
         {{ jugador.ptos }}
+      </ion-col>
+      <ion-col [navPush]="editJugador" [navParams]="{'jugador':jugador}">
+          <ion-icon ios="ios-create" md="md-create"></ion-icon>
+      </ion-col>
+      <ion-col (click)="deleteJugador(jugador)">
+        <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <!-- <ion-list>
+    <ion-item *ngFor="let jugador of listjugadores">
+      {{ jugador.nombre }} {{ jugador.j }} {{ jugador.g }} {{ jugador.e }} {{ jugador.p }} {{ jugador.c }} {{ jugador.f }} {{ jugador.ptos }}
+    </ion-item>
+  </ion-list> -->
 </ion-content>

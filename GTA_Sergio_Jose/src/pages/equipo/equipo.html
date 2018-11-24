@@ -10,7 +10,7 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item *ngFor="let equipo of equipos"
+    <button ion-item *ngFor="let equipo of listaEquipos"
       (click)="mostrarJugadores(equipo.id)">
       <h2>
         {{ equipo.nombre }}

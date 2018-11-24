@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Jugadores</ion-title>
+    <ion-title>Seleccionar jugadores titulares</ion-title>
     <ion-buttons end>
       <button ion-button (click)="cerrarModal()">Cerrar</button>
     </ion-buttons>
@@ -12,10 +12,21 @@
 
 <ion-content padding>
     <ion-list>
-        <button ion-item *ngFor="let jugador of jugadores">
-          <h2>
-            {{ jugador.nombre }}
-          </h2>
-        </button>
-      </ion-list>
+        <h1>Titulares</h1>
+        <ion-item *ngFor="let jugador of jugadores">
+          <div  *ngIf=" jugador.titular == true">
+            <ion-label>hola</ion-label>
+            <!-- <ion-input type="button" (click)="titulares"></ion-input> -->
+          </div>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <h1>Suplentes</h1>
+        <ion-item *ngFor="let jugador of jugadores">
+          <div  *ngIf=" jugador.titular == false">
+            <ion-label>{{ jugador.nombre }}</ion-label>
+            <!-- <ion-input type="button" (click)="titulares"></ion-input> -->
+          </div>
+        </ion-item>
+    </ion-list>
 </ion-content>

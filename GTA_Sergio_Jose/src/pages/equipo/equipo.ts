@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, ModalOptions } from 'ionic-angular';
 import { DatosProvider } from "../../providers/datos/datos";
+import { Jugador } from '../../interfaces/jugador.interfaces';
 
 @IonicPage()
 @Component({
@@ -9,9 +10,11 @@ import { DatosProvider } from "../../providers/datos/datos";
 })
 export class EquipoPage {
 
-  jugadoresEquipo:any
+  listaEquipos:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController, public datos: DatosProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private modal: ModalController, public equipos: DatosProvider) {
+    this.listaEquipos = equipos.equipos;
   }
 
   ionViewDidLoad() {
@@ -19,17 +22,21 @@ export class EquipoPage {
   }
 
   mostrarJugadores(id){
-    for (let i = 0; i < this.datos.jugadores.length; i++) {
-      if (this.datos.jugadores[i].idEquipo==id) {
-        this.jugadoresEquipo.push(this.datos.jugadores[i]);
+    let jugadoresEquipo:Jugador[] = [];
+    for (let i = 0; i < this.equipos.jugadores.length; i++) {
+      if (this.equipos.jugadores[i].idEquipo==id) {
+        console.log(this.equipos.jugadores[i]);
+        jugadoresEquipo.push(this.equipos.jugadores[i]);
       }
     }
+
+    console.log(jugadoresEquipo);
 
     const myModalOptions: ModalOptions = {
       enableBackdropDismiss: false
     }
 
-    const modalEquipo = this.modal.create('ModalEquipo', {data: this.jugadoresEquipo}, myModalOptions);
+    const modalEquipo = this.modal.create('ModalEquipo', {data: jugadoresEquipo}, myModalOptions);
     modalEquipo.present();
   }
 }
