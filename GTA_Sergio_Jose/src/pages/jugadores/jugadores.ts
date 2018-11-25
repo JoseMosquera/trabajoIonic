@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DatosProvider } from "../../providers/datos/datos";
 import { AddJugadorPage } from '../add-jugador/add-jugador';
 import { EditJugadorPage } from "../edit-jugador/edit-jugador";
-import { convertUrlToSegments } from 'ionic-angular/umd/navigation/url-serializer';
 
 @IonicPage()
 @Component({
@@ -17,21 +16,20 @@ export class JugadoresPage {
   editJugador = EditJugadorPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private jugadores: DatosProvider) {
-    jugadores.jugadores.sort(function (a, b) {
-      if (a.ptos > b.ptos) {
-        return -1;
-      }
-      if (a.ptos < b.ptos) {
-        return 1;
-      }
-      return 0;
-    });;
     this.listjugadores = jugadores.jugadores;
     console.log(this.jugadores);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JugadoresPage');
+  }
+
+  newJugador(){
+    this.navCtrl.setRoot(AddJugadorPage);
+  }
+
+  editar(jugador:any){
+    this.navCtrl.setRoot(EditJugadorPage, {'jugador': jugador});
   }
 
   deleteJugador(jugador:any){

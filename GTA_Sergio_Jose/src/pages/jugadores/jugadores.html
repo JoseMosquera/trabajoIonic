@@ -1,14 +1,18 @@
 <ion-header>
-
   <ion-navbar>
+    <ion-buttons left>
+      <button ion-button
+      icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Jugadores</ion-title>
     <ion-buttons end>
-        <button ion-button [navPush]="addJugador">
+        <button ion-button (click)="newJugador()">
           <ion-icon name="add"></ion-icon>
         </button>
       </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -62,10 +66,10 @@
       <ion-col col-1 col-sm>
         {{ jugador.f }}
       </ion-col>
-      <ion-col col-1 col-sm></ion-col>
+      <ion-col col-1 col-sm>
         {{ jugador.ptos }}
       </ion-col>
-      <ion-col [navPush]="editJugador" [navParams]="{'jugador':jugador}">
+      <ion-col (click)="editar(jugador)">
           <ion-icon ios="ios-create" md="md-create"></ion-icon>
       </ion-col>
       <ion-col (click)="deleteJugador(jugador)">
@@ -73,9 +77,4 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <!-- <ion-list>
-    <ion-item *ngFor="let jugador of listjugadores">
-      {{ jugador.nombre }} {{ jugador.j }} {{ jugador.g }} {{ jugador.e }} {{ jugador.p }} {{ jugador.c }} {{ jugador.f }} {{ jugador.ptos }}
-    </ion-item>
-  </ion-list> -->
 </ion-content>

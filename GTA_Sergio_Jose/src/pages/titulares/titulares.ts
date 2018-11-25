@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DatosProvider } from "../../providers/datos/datos";
-import { Jugador } from "../../interfaces/jugador.interfaces";
+import { ModificarTitularesPage } from "../modificar-titulares/modificar-titulares";
+import { EquipoPage } from "../equipo/equipo";
 
 @IonicPage()
 @Component({
@@ -10,12 +10,11 @@ import { Jugador } from "../../interfaces/jugador.interfaces";
 })
 export class TitularesPage {
 
-  jugadores:[] = [];
-  titulares:Jugador;
-  jugador:[] = [];
+  //modificar = ModificarTitularesPage;
+  jugadores:Array<any>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public listaJugadores: DatosProvider) {
-    this.jugadores = this.navParams.get('data');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.jugadores = this.navParams.get('jugadores');
     console.log(this.jugadores);
   }
 
@@ -23,4 +22,11 @@ export class TitularesPage {
     console.log('ionViewDidLoad TitularesPage');
   }
 
+  volver(){
+    this.navCtrl.setRoot(EquipoPage);
+  }
+
+  modificar(){
+    this.navCtrl.setRoot(ModificarTitularesPage, {'jugadores': this.jugadores});
+  }
 }

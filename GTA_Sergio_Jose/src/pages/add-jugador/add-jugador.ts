@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DatosProvider } from "../../providers/datos/datos";
 import { JugadoresPage } from "../jugadores/jugadores";
+import { Jugador } from "../../interfaces/jugador.interfaces";
 
 
 @IonicPage()
@@ -13,19 +14,10 @@ export class AddJugadorPage {
 
   nombre:string;
   equipo:number;
-  nuevoJugador:{} = {};
+  nuevoJugador:Jugador;
   idJugador:number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public jugadores: DatosProvider ) {
-    jugadores.jugadores.sort(function (a, b) {
-      if (a.ptos > b.ptos) {
-        return -1;
-      }
-      if (a.ptos < b.ptos) {
-        return 1;
-      }
-      return 0;
-    });;
     this.idJugador = jugadores.jugadores.length+1;
   }
 
@@ -38,6 +30,10 @@ export class AddJugadorPage {
     console.log(jugador);
     this.jugadores.jugadores.push(jugador);
     console.log(this.jugadores.jugadores);
-    this.navCtrl.push(JugadoresPage); 
+    this.navCtrl.setRoot(JugadoresPage); 
+  }
+  
+  volver(){
+    this.navCtrl.setRoot(JugadoresPage);
   }
 }

@@ -37,5 +37,25 @@ export const JUGADORES = [
 
 {nombre:"Antonio", id:19, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
 
-{nombre:"Pilar", id:20, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false}
+{nombre:"Pilar", id:20, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Luisa", id:21, idEquipo:2, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Pedro", id:22, idEquipo:3, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Felix", id:23, idEquipo:4, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Pili", id:24, idEquipo:1, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Rober", id:25, idEquipo:2, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Quino", id:26, idEquipo:3, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Raulito", id:27, idEquipo:4, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Irene", id:28, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Celia", id:29, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false},
+
+{nombre:"Julia", id:30, idEquipo:0, j:0, g:0, e:0, p:0, c:0, f:0, ptos:0, titular:false}
 ];

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Seleccionar titulares</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let jugador of jugadores">
+        <ion-label>{{ jugador.nombre }}</ion-label>
+        <ion-checkbox *ngIf="jugador.titular==true; else noTitular" [(ngModel)]="jugador.titular" checked="true"></ion-checkbox>
+        <ng-template #noTitular>
+            <ion-checkbox *ngIf="jugador.titular==false; else noTitular" [(ngModel)]="jugador.titular" checked="false"></ion-checkbox>
+        </ng-template>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button (click)="actualizar()">Actualizar</button>
+</ion-content>

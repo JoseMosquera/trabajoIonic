@@ -1,1 +1,32 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mycontent">
+    <ion-header>
+        <ion-toolbar color="morado">
+        <ion-title>Menú Principal</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list> 
+            <ion-item (click)="abrirPagina(calendario)">
+                <ion-icon name="calendar" item-start></ion-icon>
+                    Calendario
+            </ion-item>
+        
+            <ion-item (click)="abrirPagina(equipo)">
+                <ion-icon name="people" item-start></ion-icon>
+                Equipo
+            </ion-item>
+        
+            <ion-item (click)="abrirPagina(jugadores)">
+                <ion-icon name="person" item-start></ion-icon>
+                Jugadores
+            </ion-item>
+        
+            <ion-item (click)="abrirPagina(jornadas)">
+                <ion-icon name="clipboard" item-start></ion-icon>
+                Jornadas
+            </ion-item>
+    </ion-list>
+    </ion-content>
+</ion-menu> 
+
+<ion-nav [root]="rootPage" #mycontent></ion-nav>

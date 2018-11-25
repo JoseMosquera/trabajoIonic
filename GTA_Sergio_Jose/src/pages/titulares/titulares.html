@@ -1,13 +1,19 @@
 <ion-header>
     <ion-navbar>
+      <ion-buttons left>
+        <button ion-button
+        icon-only (click)="volver()">
+          <ion-icon name="md-arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
       <ion-title>Titulares del Equipo</ion-title>
     </ion-navbar>
-  </ion-header>
+</ion-header>
   
   
   <ion-content padding>
       <ion-list>
-          <h1>Titulares</h1>
+          <h2>Titulares</h2>
           <div *ngFor="let jugador of jugadores">
             <ion-item  *ngIf=" jugador.titular == true">
               <ion-label>{{ jugador.nombre }}</ion-label>
@@ -15,11 +21,12 @@
             </div>
       </ion-list>
       <ion-list>
-          <h1>Suplentes</h1>
+          <h2>Suplentes</h2>
           <div *ngFor="let jugador of jugadores">
             <ion-item  *ngIf=" jugador.titular == false">
               <ion-label>{{ jugador.nombre }}</ion-label>
             </ion-item>
           </div>
       </ion-list>
+      <button ion-button (click)="modificar()">Modificar titulares</button>
   </ion-content>
