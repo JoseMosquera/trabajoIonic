@@ -1,14 +1,14 @@
-webpackJsonp([10],{
+webpackJsonp([11],{
 
-/***/ 156:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddJugadorPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -37,14 +37,14 @@ var AddJugadorPage = /** @class */ (function () {
         console.log(jugador);
         this.jugadores.jugadores.push(jugador);
         console.log(this.jugadores.jugadores);
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */]);
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */]);
     };
     AddJugadorPage.prototype.volver = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */]);
     };
     AddJugadorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add-jugador',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\add-jugador\add-jugador.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button\n      icon-only (click)="volver()">\n        <ion-icon name="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>addJugador</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Nombre:</ion-label>\n    <ion-input [(ngModel)]="nombre" name="nombre"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Equipo(1, 2, 3 o 4):</ion-label>\n    <ion-input type="number" [(ngModel)]="equipo"  name="equipo"></ion-input>\n  </ion-item>\n\n  <button ion-button block clear (click)="addJugador()">Añadir</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\add-jugador\add-jugador.html"*/,
+            selector: 'page-add-jugador',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\add-jugador\add-jugador.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only (click)="volver()">\n\n        <ion-icon name="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>addJugador</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-label floating>Nombre:</ion-label>\n\n    <ion-input [(ngModel)]="nombre" name="nombre"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Equipo(1, 2, 3 o 4):</ion-label>\n\n    <ion-input type="number" [(ngModel)]="equipo"  name="equipo"></ion-input>\n\n  </ion-item>\n\n\n\n  <button ion-button block clear (click)="addJugador()">Añadir</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\add-jugador\add-jugador.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]])
     ], AddJugadorPage);
@@ -55,15 +55,15 @@ var AddJugadorPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 157:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditJugadorPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -97,14 +97,14 @@ var EditJugadorPage = /** @class */ (function () {
                 console.log(this.jugadores.jugadores[i]);
             }
         }
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */]);
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */]);
     };
     EditJugadorPage.prototype.volver = function () {
         this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */]);
     };
     EditJugadorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-edit-jugador',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\edit-jugador\edit-jugador.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button\n      icon-only (click)="volver()">\n        <ion-icon name="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>editJugador</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Nombre</ion-label>\n    <ion-input type="text" [(ngModel)]="nombre" name="nombre" value="{{ jugador.nombre }}"></ion-input>\n  </ion-item>\n  \n  <ion-item>\n    <ion-label floating>Equipo(1, 2, 3 o 4):</ion-label>\n    <ion-input type="number" [(ngModel)]="equipo" name="equipo" value="{{ jugador.idEquipo }}"></ion-input>\n  </ion-item>\n    \n  <ion-item>\n    <ion-label floating>Partidos jugados:</ion-label>\n    <ion-input type="number" [(ngModel)]="j" name="equipo" value="{{ jugador.j }}"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Partidos ganados:</ion-label>\n    <ion-input type="number" [(ngModel)]="g" name="equipo" value="{{ jugador.g }}"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Partidos empatados:</ion-label>\n    <ion-input type="number" [(ngModel)]="e" name="equipo" value="{{ jugador.e }}"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Partidos perdidos:</ion-label>\n    <ion-input type="number" [(ngModel)]="p" name="equipo" value="{{ jugador.p }}"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Partidos en casa:</ion-label>\n    <ion-input type="number" [(ngModel)]="c" name="equipo" value="{{ jugador.c }}"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Partidos fuera de casa:</ion-label>\n    <ion-input type="number" [(ngModel)]="f" name="equipo" value="{{ jugador.f }}"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Puntos:</ion-label>\n    <ion-input type="number" [(ngModel)]="ptos" name="equipo" value="{{ jugador.ptos }}"></ion-input>\n  </ion-item>\n  \n  <ion-input  type="hidden" [(ngModel)]="id" name="nombre" value="{{ jugador.id }}"></ion-input>\n  \n  <button ion-button block clear (click)="actualizarJugador()">Actualizar</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\edit-jugador\edit-jugador.html"*/,
+            selector: 'page-edit-jugador',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\edit-jugador\edit-jugador.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only (click)="volver()">\n\n        <ion-icon name="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>editJugador</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-label floating>Nombre</ion-label>\n\n    <ion-input type="text" [(ngModel)]="nombre" name="nombre" value="{{ jugador.nombre }}"></ion-input>\n\n  </ion-item>\n\n  \n\n  <ion-item>\n\n    <ion-label floating>Equipo(1, 2, 3 o 4):</ion-label>\n\n    <ion-input type="number" [(ngModel)]="equipo" name="equipo" value="{{ jugador.idEquipo }}"></ion-input>\n\n  </ion-item>\n\n    \n\n  <ion-item>\n\n    <ion-label floating>Partidos jugados:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="j" name="equipo" value="{{ jugador.j }}"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Partidos ganados:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="g" name="equipo" value="{{ jugador.g }}"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Partidos empatados:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="e" name="equipo" value="{{ jugador.e }}"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Partidos perdidos:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="p" name="equipo" value="{{ jugador.p }}"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Partidos en casa:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="c" name="equipo" value="{{ jugador.c }}"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Partidos fuera de casa:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="f" name="equipo" value="{{ jugador.f }}"></ion-input>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label floating>Puntos:</ion-label>\n\n    <ion-input type="number" [(ngModel)]="ptos" name="equipo" value="{{ jugador.ptos }}"></ion-input>\n\n  </ion-item>\n\n  \n\n  <ion-input  type="hidden" [(ngModel)]="id" name="nombre" value="{{ jugador.id }}"></ion-input>\n\n  \n\n  <button ion-button block clear (click)="actualizarJugador()">Actualizar</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\edit-jugador\edit-jugador.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]])
     ], EditJugadorPage);
@@ -115,14 +115,94 @@ var EditJugadorPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarioPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CalendarioPage = /** @class */ (function () {
+    function CalendarioPage(navCtrl, modalCtrl, alertCtrl) {
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.alertCtrl = alertCtrl;
+        this.eventSource = [];
+        this.selectedDay = new Date();
+        this.calendar = {
+            mode: 'month',
+            currentDate: this.selectedDay
+        };
+    }
+    CalendarioPage.prototype.addEvent = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create('EventModalPage', { selectedDay: this.selectedDay });
+        modal.present();
+        modal.onDidDismiss(function (data) {
+            if (data) {
+                var eventData = data;
+                eventData.startTime = new Date(data.startTime);
+                eventData.endTime = new Date(data.endTime);
+                var events_1 = _this.eventSource;
+                events_1.push(eventData);
+                _this.eventSource = [];
+                setTimeout(function () {
+                    _this.eventSource = events_1;
+                });
+            }
+        });
+    };
+    CalendarioPage.prototype.onViewTitleChanged = function (title) {
+        this.viewTitle = title;
+    };
+    CalendarioPage.prototype.onTimeSelected = function (ev) {
+        this.selectedDay = ev.selectedTime;
+    };
+    CalendarioPage.prototype.onEventSelected = function (event) {
+        var start = __WEBPACK_IMPORTED_MODULE_2_moment__(event.startTime).format('LLLL');
+        var end = __WEBPACK_IMPORTED_MODULE_2_moment__(event.endTime).format('LLLL');
+        var alert = this.alertCtrl.create({
+            title: '' + event.title,
+            subTitle: 'From: ' + start + '<br>To: ' + end,
+            buttons: ['OK']
+        });
+        alert.present();
+    };
+    CalendarioPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-calendario',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\calendario\calendario.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Calendario de Juego</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="addEvent()"> \n\n        <ion-icon name="add"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    \n\n  </ion-navbar>\n\n  \n\n</ion-header>\n\n\n\n<ion-content>\n\n  <calendar [eventSource]="eventSource" \n\n  [calendarMode]="calendar.mode" \n\n  [currentDate]="calendar.currentDate" \n\n  (onEventSelected)="onEventSelected($event)" \n\n  (onTitleChanged)="onViewTitleChanged($event)"\n\n  (onTimeSelected)="onTimeSelected($event)" \n\n  step="30" class="calendar"> \n\n  </calendar>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\calendario\calendario.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    ], CalendarioPage);
+    return CalendarioPage;
+}());
+
+//# sourceMappingURL=calendario.js.map
+
+/***/ }),
+
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModificarTitularesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__titulares_titulares__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__titulares_titulares__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -167,9 +247,9 @@ var ModificarTitularesPage = /** @class */ (function () {
     };
     ModificarTitularesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-modificar-titulares',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\modificar-titulares\modificar-titulares.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Seleccionar titulares</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item *ngFor="let jugador of jugadores">\n        <ion-label>{{ jugador.nombre }}</ion-label>\n        <ion-checkbox *ngIf="jugador.titular==true; else noTitular" [(ngModel)]="jugador.titular" checked="true"></ion-checkbox>\n        <ng-template #noTitular>\n            <ion-checkbox *ngIf="jugador.titular==false; else noTitular" [(ngModel)]="jugador.titular" checked="false"></ion-checkbox>\n        </ng-template>\n    </ion-item>\n  </ion-list>\n\n  <button ion-button (click)="actualizar()">Actualizar</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\modificar-titulares\modificar-titulares.html"*/,
+            selector: 'page-modificar-titulares',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\modificar-titulares\modificar-titulares.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Seleccionar titulares</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <ion-item *ngFor="let jugador of jugadores">\n\n        <ion-label>{{ jugador.nombre }}</ion-label>\n\n        <ion-checkbox *ngIf="jugador.titular==true; else noTitular" [(ngModel)]="jugador.titular" checked="true"></ion-checkbox>\n\n        <ng-template #noTitular>\n\n            <ion-checkbox *ngIf="jugador.titular==false; else noTitular" [(ngModel)]="jugador.titular" checked="false"></ion-checkbox>\n\n        </ng-template>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <button ion-button (click)="actualizar()">Actualizar</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\modificar-titulares\modificar-titulares.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
     ], ModificarTitularesPage);
     return ModificarTitularesPage;
 }());
@@ -178,20 +258,20 @@ var ModificarTitularesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 159:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calendario_calendario__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__equipo_equipo__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__jugadores_jugadores__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__jornadas_jornadas__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calendario_calendario__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__equipo_equipo__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__jugadores_jugadores__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__jornadas_jornadas__ = __webpack_require__(92);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -245,10 +325,10 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n        <button ion-button\n\n        icon-only menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n    <ion-title>Menú Principal</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n      <ion-item (click)="irPaginaCalendario()">\n\n        <ion-icon name="calendar" item-start></ion-icon>\n\n          Calendario\n\n      </ion-item>\n\n\n\n      <ion-item (click)="irPaginaEquipo()">\n\n        <ion-icon name="people" item-start></ion-icon>\n\n          Equipo\n\n      </ion-item>\n\n\n\n      <ion-item (click)="irPaginaJugadores()">\n\n        <ion-icon name="person" item-start></ion-icon>\n\n          Jugadores\n\n      </ion-item>\n\n\n\n      <ion-item (click)="irPaginaJornadas()">\n\n        <ion-icon name="clipboard" item-start></ion-icon>\n\n          Jornadas\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <br>\n\n\n\n    <button ion-button icon-start (click)="cerrarSesion()" full round color="danger">\n\n      <ion-icon name="close"></ion-icon>\n\n      Cerrar Sesión\n\n    </button>\n\n</ion-content>'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n        <button ion-button\n\n        icon-only menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n    </ion-buttons>\n\n    <ion-title>Menú Principal</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n      <ion-item (click)="irPaginaCalendario()">\n\n        <ion-icon name="calendar" item-start></ion-icon>\n\n          Calendario\n\n      </ion-item>\n\n\n\n      <ion-item (click)="irPaginaEquipo()">\n\n        <ion-icon name="people" item-start></ion-icon>\n\n          Equipo\n\n      </ion-item>\n\n\n\n      <ion-item (click)="irPaginaJugadores()">\n\n        <ion-icon name="person" item-start></ion-icon>\n\n          Jugadores\n\n      </ion-item>\n\n\n\n      <ion-item (click)="irPaginaJornadas()">\n\n        <ion-icon name="clipboard" item-start></ion-icon>\n\n          Jornadas\n\n      </ion-item>\n\n\n\n    </ion-list>\n\n\n\n    <br>\n\n\n\n    <button ion-button icon-start (click)="cerrarSesion()" full round color="danger">\n\n      <ion-icon name="close"></ion-icon>\n\n      Cerrar Sesión\n\n    </button>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\home\home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["AngularFireAuth"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["AngularFireAuth"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]])
     ], HomePage);
     return HomePage;
@@ -258,14 +338,14 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 160:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -314,7 +394,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>INICIO DE SESIÓN</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <form>\n\n      <ion-item>\n\n        <ion-label floating>Email</ion-label>\n\n        <ion-input\n\n          [(ngModel)]="user.email"\n\n          name="email"\n\n          type="text"\n\n          autocapitalize="off"\n\n          required>\n\n        </ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label floating>Contraseña</ion-label>\n\n        <ion-input\n\n          [(ngModel)]="user.password"\n\n          name="password"\n\n          type="password"\n\n          required>\n\n        </ion-input>\n\n      </ion-item>\n\n    </form>\n\n  </ion-list>\n\n\n\n  <br>\n\n\n\n  <button ion-button icon-start (click)="login(user)" medium round>\n\n    <ion-icon name="unlock"></ion-icon>\n\n    Iniciar Sesión\n\n  </button>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>INICIO DE SESIÓN</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list>\n\n    <form>\n\n      <ion-item>\n\n        <ion-label floating>Email</ion-label>\n\n        <ion-input\n\n          [(ngModel)]="user.email"\n\n          name="email"\n\n          type="text"\n\n          autocapitalize="off"\n\n          required>\n\n        </ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label floating>Contraseña</ion-label>\n\n        <ion-input\n\n          [(ngModel)]="user.password"\n\n          name="password"\n\n          type="password"\n\n          required>\n\n        </ion-input>\n\n      </ion-item>\n\n    </form>\n\n  </ion-list>\n\n\n\n  <br>\n\n\n\n  <button ion-button icon-start (click)="login(user)" medium round>\n\n    <ion-icon name="unlock"></ion-icon>\n\n    Iniciar Sesión\n\n  </button>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */]])
@@ -326,7 +406,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 171:
+/***/ 173:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -339,53 +419,57 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 171;
+webpackEmptyAsyncContext.id = 173;
 
 /***/ }),
 
-/***/ 216:
+/***/ 218:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/add-jugador/add-jugador.module": [
-		705,
-		9
+		841,
+		10
 	],
 	"../pages/calendario/calendario.module": [
-		704,
-		8
+		842,
+		9
 	],
 	"../pages/edit-jugador/edit-jugador.module": [
-		706,
-		7
+		844,
+		8
 	],
 	"../pages/equipo/equipo.module": [
-		707,
-		6
+		843,
+		7
+	],
+	"../pages/event-modal/event-modal.module": [
+		845,
+		0
 	],
 	"../pages/home/home.module": [
-		708,
-		5
+		846,
+		6
 	],
 	"../pages/jornadas/jornadas.module": [
-		710,
-		4
+		847,
+		5
 	],
 	"../pages/jugadores/jugadores.module": [
-		709,
-		3
+		848,
+		4
 	],
 	"../pages/login/login.module": [
-		711,
-		2
+		849,
+		3
 	],
 	"../pages/modificar-titulares/modificar-titulares.module": [
-		712,
-		1
+		850,
+		2
 	],
 	"../pages/titulares/titulares.module": [
-		713,
-		0
+		851,
+		1
 	]
 };
 function webpackAsyncContext(req) {
@@ -399,18 +483,83 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 216;
+webpackAsyncContext.id = 218;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 357:
+/***/ 47:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JugadoresPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_jugador_add_jugador__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__edit_jugador_edit_jugador__ = __webpack_require__(158);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var JugadoresPage = /** @class */ (function () {
+    function JugadoresPage(navCtrl, navParams, jugadores) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.jugadores = jugadores;
+        this.addJugador = __WEBPACK_IMPORTED_MODULE_3__add_jugador_add_jugador__["a" /* AddJugadorPage */];
+        this.editJugador = __WEBPACK_IMPORTED_MODULE_4__edit_jugador_edit_jugador__["a" /* EditJugadorPage */];
+        this.listjugadores = jugadores.jugadores;
+        console.log(this.jugadores);
+    }
+    JugadoresPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad JugadoresPage');
+    };
+    JugadoresPage.prototype.newJugador = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__add_jugador_add_jugador__["a" /* AddJugadorPage */]);
+    };
+    JugadoresPage.prototype.editar = function (jugador) {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__edit_jugador_edit_jugador__["a" /* EditJugadorPage */], { 'jugador': jugador });
+    };
+    JugadoresPage.prototype.deleteJugador = function (jugador) {
+        console.log(jugador);
+        for (var i = 0; i < this.jugadores.jugadores.length; i++) {
+            if (jugador == this.jugadores.jugadores[i]) {
+                console.log(this.jugadores.jugadores[i]);
+                this.jugadores.jugadores.splice(i, 1);
+            }
+        }
+    };
+    JugadoresPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-jugadores',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\jugadores\jugadores.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Jugadores</ion-title>\n\n    <ion-buttons end>\n\n        <button ion-button (click)="newJugador()">\n\n          <ion-icon name="add"></ion-icon>\n\n        </button>\n\n      </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-grid>\n\n    <ion-row>\n\n    <ion-col col-3 col-sm>\n\n        Nombre\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        J\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        V\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        E\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        D\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        C\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        F\n\n      </ion-col>\n\n      <ion-col col-2 col-sm>\n\n        Ptos\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row *ngFor="let jugador of listjugadores" >\n\n      <ion-col col-3 col-sm >\n\n        {{ jugador.nombre }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.j }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.g }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.e }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.p }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.c }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.f }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.ptos }}\n\n      </ion-col>\n\n      <ion-col (click)="editar(jugador)">\n\n          <ion-icon ios="ios-create" md="md-create"></ion-icon>\n\n      </ion-col>\n\n      <ion-col (click)="deleteJugador(jugador)">\n\n        <ion-icon ios="ios-trash" md="md-trash"></ion-icon>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\jugadores\jugadores.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]])
+    ], JugadoresPage);
+    return JugadoresPage;
+}());
+
+//# sourceMappingURL=jugadores.js.map
+
+/***/ }),
+
+/***/ 484:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(358);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(485);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(489);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -418,41 +567,43 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 362:
+/***/ 489:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export firebaseConfig */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(356);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__(838);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_angularfire2__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_auth_auth__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(702);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_calendario_calendario__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_equipo_equipo__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_jugadores_jugadores__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_jornadas_jornadas__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(703);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_datos_datos__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_add_jugador_add_jugador__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_edit_jugador_edit_jugador__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_titulares_titulares__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modificar_titulares_modificar_titulares__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_auth_auth__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(839);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_calendario_calendario__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_equipo_equipo__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_jugadores_jugadores__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_jornadas_jornadas__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(840);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_datos_datos__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_add_jugador_add_jugador__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_edit_jugador_edit_jugador__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_titulares_titulares__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_modificar_titulares_modificar_titulares__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ionic2_calendar__ = __webpack_require__(483);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -490,7 +641,6 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_calendario_calendario__["a" /* CalendarioPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_equipo_equipo__["a" /* EquipoPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_jugadores_jugadores__["a" /* JugadoresPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_jornadas_jornadas__["a" /* JornadasPage */],
@@ -498,33 +648,35 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_18__pages_edit_jugador_edit_jugador__["a" /* EditJugadorPage */],
                 __WEBPACK_IMPORTED_MODULE_19__pages_titulares_titulares__["a" /* TitularesPage */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_modificar_titulares_modificar_titulares__["a" /* ModificarTitularesPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_login_login__["a" /* LoginPage */]
+                __WEBPACK_IMPORTED_MODULE_9__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_calendario_calendario__["a" /* CalendarioPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_15__angular_http__["a" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/calendario/calendario.module#CalendarioPageModule', name: 'CalendarioPage', segment: 'calendario', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/add-jugador/add-jugador.module#AddJugadorPageModule', name: 'AddJugadorPage', segment: 'add-jugador', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/edit-jugador/edit-jugador.module#EditJugadorPageModule', name: 'EditJugadorPage', segment: 'edit-jugador', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/calendario/calendario.module#CalendarioPageModule', name: 'CalendarioPage', segment: 'calendario', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/equipo/equipo.module#EquipoPageModule', name: 'EquipoPage', segment: 'equipo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/edit-jugador/edit-jugador.module#EditJugadorPageModule', name: 'EditJugadorPage', segment: 'edit-jugador', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/event-modal/event-modal.module#EventModalPageModule', name: 'EventModalPage', segment: 'event-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/jugadores/jugadores.module#JugadoresPageModule', name: 'JugadoresPage', segment: 'jugadores', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/jornadas/jornadas.module#JornadasPageModule', name: 'JornadasPage', segment: 'jornadas', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/jugadores/jugadores.module#JugadoresPageModule', name: 'JugadoresPage', segment: 'jugadores', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modificar-titulares/modificar-titulares.module#ModificarTitularesPageModule', name: 'ModificarTitularesPage', segment: 'modificar-titulares', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/titulares/titulares.module#TitularesPageModule', name: 'TitularesPage', segment: 'titulares', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_5_angularfire2__["AngularFireModule"].initializeApp(firebaseConfig),
-                __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["AngularFireAuthModule"]
+                __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["AngularFireAuthModule"],
+                __WEBPACK_IMPORTED_MODULE_21_ionic2_calendar__["a" /* NgCalendarModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_calendario_calendario__["a" /* CalendarioPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_equipo_equipo__["a" /* EquipoPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_jugadores_jugadores__["a" /* JugadoresPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_jornadas_jornadas__["a" /* JornadasPage */],
@@ -532,7 +684,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_18__pages_edit_jugador_edit_jugador__["a" /* EditJugadorPage */],
                 __WEBPACK_IMPORTED_MODULE_19__pages_titulares_titulares__["a" /* TitularesPage */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_modificar_titulares_modificar_titulares__["a" /* ModificarTitularesPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_login_login__["a" /* LoginPage */]
+                __WEBPACK_IMPORTED_MODULE_9__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_calendario_calendario__["a" /* CalendarioPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -550,7 +703,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 382:
+/***/ 509:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -565,7 +718,7 @@ var EQUIPOS = [
 
 /***/ }),
 
-/***/ 383:
+/***/ 510:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -606,77 +759,291 @@ var JUGADORES = [
 
 /***/ }),
 
-/***/ 45:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 512:
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JugadoresPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_jugador_add_jugador__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__edit_jugador_edit_jugador__ = __webpack_require__(157);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
+var map = {
+	"./af": 220,
+	"./af.js": 220,
+	"./ar": 221,
+	"./ar-dz": 222,
+	"./ar-dz.js": 222,
+	"./ar-kw": 223,
+	"./ar-kw.js": 223,
+	"./ar-ly": 224,
+	"./ar-ly.js": 224,
+	"./ar-ma": 225,
+	"./ar-ma.js": 225,
+	"./ar-sa": 226,
+	"./ar-sa.js": 226,
+	"./ar-tn": 227,
+	"./ar-tn.js": 227,
+	"./ar.js": 221,
+	"./az": 228,
+	"./az.js": 228,
+	"./be": 229,
+	"./be.js": 229,
+	"./bg": 230,
+	"./bg.js": 230,
+	"./bm": 231,
+	"./bm.js": 231,
+	"./bn": 232,
+	"./bn.js": 232,
+	"./bo": 233,
+	"./bo.js": 233,
+	"./br": 234,
+	"./br.js": 234,
+	"./bs": 235,
+	"./bs.js": 235,
+	"./ca": 236,
+	"./ca.js": 236,
+	"./cs": 237,
+	"./cs.js": 237,
+	"./cv": 238,
+	"./cv.js": 238,
+	"./cy": 239,
+	"./cy.js": 239,
+	"./da": 240,
+	"./da.js": 240,
+	"./de": 241,
+	"./de-at": 242,
+	"./de-at.js": 242,
+	"./de-ch": 243,
+	"./de-ch.js": 243,
+	"./de.js": 241,
+	"./dv": 244,
+	"./dv.js": 244,
+	"./el": 245,
+	"./el.js": 245,
+	"./en-au": 246,
+	"./en-au.js": 246,
+	"./en-ca": 247,
+	"./en-ca.js": 247,
+	"./en-gb": 248,
+	"./en-gb.js": 248,
+	"./en-ie": 249,
+	"./en-ie.js": 249,
+	"./en-il": 250,
+	"./en-il.js": 250,
+	"./en-nz": 251,
+	"./en-nz.js": 251,
+	"./eo": 252,
+	"./eo.js": 252,
+	"./es": 253,
+	"./es-do": 254,
+	"./es-do.js": 254,
+	"./es-us": 255,
+	"./es-us.js": 255,
+	"./es.js": 253,
+	"./et": 256,
+	"./et.js": 256,
+	"./eu": 257,
+	"./eu.js": 257,
+	"./fa": 258,
+	"./fa.js": 258,
+	"./fi": 259,
+	"./fi.js": 259,
+	"./fo": 260,
+	"./fo.js": 260,
+	"./fr": 261,
+	"./fr-ca": 262,
+	"./fr-ca.js": 262,
+	"./fr-ch": 263,
+	"./fr-ch.js": 263,
+	"./fr.js": 261,
+	"./fy": 264,
+	"./fy.js": 264,
+	"./gd": 265,
+	"./gd.js": 265,
+	"./gl": 266,
+	"./gl.js": 266,
+	"./gom-latn": 267,
+	"./gom-latn.js": 267,
+	"./gu": 268,
+	"./gu.js": 268,
+	"./he": 269,
+	"./he.js": 269,
+	"./hi": 270,
+	"./hi.js": 270,
+	"./hr": 271,
+	"./hr.js": 271,
+	"./hu": 272,
+	"./hu.js": 272,
+	"./hy-am": 273,
+	"./hy-am.js": 273,
+	"./id": 274,
+	"./id.js": 274,
+	"./is": 275,
+	"./is.js": 275,
+	"./it": 276,
+	"./it.js": 276,
+	"./ja": 277,
+	"./ja.js": 277,
+	"./jv": 278,
+	"./jv.js": 278,
+	"./ka": 279,
+	"./ka.js": 279,
+	"./kk": 280,
+	"./kk.js": 280,
+	"./km": 281,
+	"./km.js": 281,
+	"./kn": 282,
+	"./kn.js": 282,
+	"./ko": 283,
+	"./ko.js": 283,
+	"./ky": 284,
+	"./ky.js": 284,
+	"./lb": 285,
+	"./lb.js": 285,
+	"./lo": 286,
+	"./lo.js": 286,
+	"./lt": 287,
+	"./lt.js": 287,
+	"./lv": 288,
+	"./lv.js": 288,
+	"./me": 289,
+	"./me.js": 289,
+	"./mi": 290,
+	"./mi.js": 290,
+	"./mk": 291,
+	"./mk.js": 291,
+	"./ml": 292,
+	"./ml.js": 292,
+	"./mn": 293,
+	"./mn.js": 293,
+	"./mr": 294,
+	"./mr.js": 294,
+	"./ms": 295,
+	"./ms-my": 296,
+	"./ms-my.js": 296,
+	"./ms.js": 295,
+	"./mt": 297,
+	"./mt.js": 297,
+	"./my": 298,
+	"./my.js": 298,
+	"./nb": 299,
+	"./nb.js": 299,
+	"./ne": 300,
+	"./ne.js": 300,
+	"./nl": 301,
+	"./nl-be": 302,
+	"./nl-be.js": 302,
+	"./nl.js": 301,
+	"./nn": 303,
+	"./nn.js": 303,
+	"./pa-in": 304,
+	"./pa-in.js": 304,
+	"./pl": 305,
+	"./pl.js": 305,
+	"./pt": 306,
+	"./pt-br": 307,
+	"./pt-br.js": 307,
+	"./pt.js": 306,
+	"./ro": 308,
+	"./ro.js": 308,
+	"./ru": 309,
+	"./ru.js": 309,
+	"./sd": 310,
+	"./sd.js": 310,
+	"./se": 311,
+	"./se.js": 311,
+	"./si": 312,
+	"./si.js": 312,
+	"./sk": 313,
+	"./sk.js": 313,
+	"./sl": 314,
+	"./sl.js": 314,
+	"./sq": 315,
+	"./sq.js": 315,
+	"./sr": 316,
+	"./sr-cyrl": 317,
+	"./sr-cyrl.js": 317,
+	"./sr.js": 316,
+	"./ss": 318,
+	"./ss.js": 318,
+	"./sv": 319,
+	"./sv.js": 319,
+	"./sw": 320,
+	"./sw.js": 320,
+	"./ta": 321,
+	"./ta.js": 321,
+	"./te": 322,
+	"./te.js": 322,
+	"./tet": 323,
+	"./tet.js": 323,
+	"./tg": 324,
+	"./tg.js": 324,
+	"./th": 325,
+	"./th.js": 325,
+	"./tl-ph": 326,
+	"./tl-ph.js": 326,
+	"./tlh": 327,
+	"./tlh.js": 327,
+	"./tr": 328,
+	"./tr.js": 328,
+	"./tzl": 329,
+	"./tzl.js": 329,
+	"./tzm": 330,
+	"./tzm-latn": 331,
+	"./tzm-latn.js": 331,
+	"./tzm.js": 330,
+	"./ug-cn": 332,
+	"./ug-cn.js": 332,
+	"./uk": 333,
+	"./uk.js": 333,
+	"./ur": 334,
+	"./ur.js": 334,
+	"./uz": 335,
+	"./uz-latn": 336,
+	"./uz-latn.js": 336,
+	"./uz.js": 335,
+	"./vi": 337,
+	"./vi.js": 337,
+	"./x-pseudo": 338,
+	"./x-pseudo.js": 338,
+	"./yo": 339,
+	"./yo.js": 339,
+	"./zh-cn": 340,
+	"./zh-cn.js": 340,
+	"./zh-hk": 341,
+	"./zh-hk.js": 341,
+	"./zh-tw": 342,
+	"./zh-tw.js": 342
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
 };
-
-
-
-
-
-var JugadoresPage = /** @class */ (function () {
-    function JugadoresPage(navCtrl, navParams, jugadores) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.jugadores = jugadores;
-        this.addJugador = __WEBPACK_IMPORTED_MODULE_3__add_jugador_add_jugador__["a" /* AddJugadorPage */];
-        this.editJugador = __WEBPACK_IMPORTED_MODULE_4__edit_jugador_edit_jugador__["a" /* EditJugadorPage */];
-        this.listjugadores = jugadores.jugadores;
-        console.log(this.jugadores);
-    }
-    JugadoresPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad JugadoresPage');
-    };
-    JugadoresPage.prototype.newJugador = function () {
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__add_jugador_add_jugador__["a" /* AddJugadorPage */]);
-    };
-    JugadoresPage.prototype.deleteJugador = function (jugador) {
-        console.log(jugador);
-        for (var i = 0; i < this.jugadores.jugadores.length; i++) {
-            if (jugador == this.jugadores.jugadores[i]) {
-                console.log(this.jugadores.jugadores[i]);
-                this.jugadores.jugadores.splice(i, 1);
-            }
-        }
-    };
-    JugadoresPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-jugadores',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\jugadores\jugadores.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Jugadores</ion-title>\n\n    <ion-buttons end>\n\n        <button ion-button (click)="newJugador()">\n\n          <ion-icon name="add"></ion-icon>\n\n        </button>\n\n      </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-grid>\n\n    <ion-row>\n\n    <ion-col col-3 col-sm>\n\n        Nombre\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        J\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        V\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        E\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        D\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        C\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        F\n\n      </ion-col>\n\n      <ion-col col-2 col-sm>\n\n        Ptos\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row *ngFor="let jugador of listjugadores" >\n\n      <ion-col col-3 col-sm >\n\n        {{ jugador.nombre }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.j }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.g }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.e }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.p }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.c }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.f }}\n\n      </ion-col>\n\n      <ion-col col-1 col-sm>\n\n        {{ jugador.ptos }}\n\n      </ion-col>\n\n      <ion-col (click)="editar(jugador)">\n\n          <ion-icon ios="ios-create" md="md-create"></ion-icon>\n\n      </ion-col>\n\n      <ion-col (click)="deleteJugador(jugador)">\n\n        <ion-icon ios="ios-trash" md="md-trash"></ion-icon>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\jugadores\jugadores.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]])
-    ], JugadoresPage);
-    return JugadoresPage;
-}());
-
-//# sourceMappingURL=jugadores.js.map
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 512;
 
 /***/ }),
 
-/***/ 57:
+/***/ 516:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 58:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DatosProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_data_equipos__ = __webpack_require__(382);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_data_jugadores__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_data_equipos__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_data_jugadores__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(511);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -708,15 +1075,15 @@ var DatosProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 65:
+/***/ 66:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EquipoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__titulares_titulares__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__titulares_titulares__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -754,7 +1121,7 @@ var EquipoPage = /** @class */ (function () {
     };
     EquipoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-equipo',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\equipo\equipo.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Equipo</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <button ion-item *ngFor="let equipo of listaEquipos"\n\n      (click)="mostrarJugadores(equipo.id)">\n\n      <h2>\n\n        {{ equipo.nombre }}\n\n      </h2>\n\n    </button>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\equipo\equipo.html"*/,
+            selector: 'page-equipo',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\equipo\equipo.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Equipo</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-list>\n\n    <button ion-item *ngFor="let equipo of listaEquipos"\n\n      (click)="mostrarJugadores(equipo.id)">\n\n      <h2>\n\n        {{ equipo.nombre }}\n\n      </h2>\n\n    </button>\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\equipo\equipo.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_datos_datos__["a" /* DatosProvider */]])
@@ -766,22 +1133,22 @@ var EquipoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 702:
+/***/ 839:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(356);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_login_login__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendario_calendario__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_equipo_equipo__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_jugadores_jugadores__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_jornadas_jornadas__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_login_login__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_calendario_calendario__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_equipo_equipo__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_jugadores_jugadores__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_jornadas_jornadas__ = __webpack_require__(92);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -831,7 +1198,7 @@ var MyApp = /** @class */ (function () {
         this.menuCtrl.close();
     };
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\app\app.html"*/'<ion-menu [content]="mycontent">\n    <ion-header>\n        <ion-toolbar color="morado">\n        <ion-title>Menú Principal</ion-title>\n        </ion-toolbar>\n    </ion-header>\n    <ion-content>\n        <ion-list> \n            <ion-item (click)="abrirPagina(calendario)">\n                <ion-icon name="calendar" item-start></ion-icon>\n                    Calendario\n            </ion-item>\n        \n            <ion-item (click)="abrirPagina(equipo)">\n                <ion-icon name="people" item-start></ion-icon>\n                Equipo\n            </ion-item>\n        \n            <ion-item (click)="abrirPagina(jugadores)">\n                <ion-icon name="person" item-start></ion-icon>\n                Jugadores\n            </ion-item>\n        \n            <ion-item (click)="abrirPagina(jornadas)">\n                <ion-icon name="clipboard" item-start></ion-icon>\n                Jornadas\n            </ion-item>\n    </ion-list>\n    </ion-content>\n</ion-menu> \n\n<ion-nav [root]="rootPage" #mycontent></ion-nav>\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\app\app.html"*/'<ion-menu [content]="mycontent">\n\n    <ion-header>\n\n        <ion-toolbar color="morado">\n\n        <ion-title>Menú Principal</ion-title>\n\n        </ion-toolbar>\n\n    </ion-header>\n\n    <ion-content>\n\n        <ion-list> \n\n            <ion-item (click)="abrirPagina(calendario)">\n\n                <ion-icon name="calendar" item-start></ion-icon>\n\n                    Calendario\n\n            </ion-item>\n\n        \n\n            <ion-item (click)="abrirPagina(equipo)">\n\n                <ion-icon name="people" item-start></ion-icon>\n\n                Equipo\n\n            </ion-item>\n\n        \n\n            <ion-item (click)="abrirPagina(jugadores)">\n\n                <ion-icon name="person" item-start></ion-icon>\n\n                Jugadores\n\n            </ion-item>\n\n        \n\n            <ion-item (click)="abrirPagina(jornadas)">\n\n                <ion-icon name="clipboard" item-start></ion-icon>\n\n                Jornadas\n\n            </ion-item>\n\n    </ion-list>\n\n    </ion-content>\n\n</ion-menu> \n\n\n\n<ion-nav [root]="rootPage" #mycontent></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */],
@@ -844,13 +1211,13 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 84:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -896,60 +1263,15 @@ var AuthProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 89:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarioPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CalendarioPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CalendarioPage = /** @class */ (function () {
-    function CalendarioPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CalendarioPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CalendarioPage');
-    };
-    CalendarioPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-calendario',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\calendario\calendario.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Calendario de Juego</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-item>\n\n    <ion-label>Fecha del Partido</ion-label>\n\n    <ion-datetime></ion-datetime>\n\n  </ion-item>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\calendario\calendario.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], CalendarioPage);
-    return CalendarioPage;
-}());
-
-//# sourceMappingURL=calendario.js.map
-
-/***/ }),
-
-/***/ 90:
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitularesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modificar_titulares_modificar_titulares__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__equipo_equipo__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modificar_titulares_modificar_titulares__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__equipo_equipo__ = __webpack_require__(66);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -981,25 +1303,24 @@ var TitularesPage = /** @class */ (function () {
     };
     TitularesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-titulares',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\titulares\titulares.html"*/'<ion-header>\n    <ion-navbar>\n      <ion-buttons left>\n        <button ion-button\n        icon-only (click)="volver()">\n          <ion-icon name="md-arrow-back"></ion-icon>\n        </button>\n      </ion-buttons>\n      <ion-title>Titulares del Equipo</ion-title>\n    </ion-navbar>\n</ion-header>\n  \n  \n  <ion-content padding>\n      <ion-list>\n          <h2>Titulares</h2>\n          <div *ngFor="let jugador of jugadores">\n            <ion-item  *ngIf=" jugador.titular == true">\n              <ion-label>{{ jugador.nombre }}</ion-label>\n            </ion-item>\n            </div>\n      </ion-list>\n      <ion-list>\n          <h2>Suplentes</h2>\n          <div *ngFor="let jugador of jugadores">\n            <ion-item  *ngIf=" jugador.titular == false">\n              <ion-label>{{ jugador.nombre }}</ion-label>\n            </ion-item>\n          </div>\n      </ion-list>\n      <button ion-button (click)="modificar()">Modificar titulares</button>\n  </ion-content>'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\titulares\titulares.html"*/,
+            selector: 'page-titulares',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\titulares\titulares.html"*/'<ion-header>\n\n    <ion-navbar>\n\n      <ion-buttons left>\n\n        <button ion-button\n\n        icon-only (click)="volver()">\n\n          <ion-icon name="md-arrow-back"></ion-icon>\n\n        </button>\n\n      </ion-buttons>\n\n      <ion-title>Titulares del Equipo</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n  \n\n  \n\n  <ion-content padding>\n\n      <ion-list>\n\n          <h2>Titulares</h2>\n\n          <div *ngFor="let jugador of jugadores">\n\n            <ion-item  *ngIf=" jugador.titular == true">\n\n              <ion-label>{{ jugador.nombre }}</ion-label>\n\n            </ion-item>\n\n            </div>\n\n      </ion-list>\n\n      <ion-list>\n\n          <h2>Suplentes</h2>\n\n          <div *ngFor="let jugador of jugadores">\n\n            <ion-item  *ngIf=" jugador.titular == false">\n\n              <ion-label>{{ jugador.nombre }}</ion-label>\n\n            </ion-item>\n\n          </div>\n\n      </ion-list>\n\n      <button ion-button (click)="modificar()">Modificar titulares</button>\n\n  </ion-content>'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\titulares\titulares.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], TitularesPage);
     return TitularesPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=titulares.js.map
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JornadasPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1027,7 +1348,7 @@ var JornadasPage = /** @class */ (function () {
     };
     JornadasPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-jornadas',template:/*ion-inline-start:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\jornadas\jornadas.html"*/'<ion-header>\n\n  <ion-buttons>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  <ion-navbar>\n\n    <ion-title>Jornadas</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\josem\Desktop\ionic\trabajoIonicAjedrez\trabajoIonic\GTA_Sergio_Jose\src\pages\jornadas\jornadas.html"*/,
+            selector: 'page-jornadas',template:/*ion-inline-start:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\jornadas\jornadas.html"*/'<ion-header>\n\n  <ion-buttons>\n\n      <button ion-button\n\n      icon-only menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  <ion-navbar>\n\n    <ion-title>Jornadas</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Sergio\Desktop\trabajoIonic\trabajoIonic\GTA_Sergio_Jose\src\pages\jornadas\jornadas.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], JornadasPage);
@@ -1038,5 +1359,5 @@ var JornadasPage = /** @class */ (function () {
 
 /***/ })
 
-},[357]);
+},[484]);
 //# sourceMappingURL=main.js.map

@@ -11,7 +11,7 @@ import { AuthProvider } from '../providers/auth/auth';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
-import {CalendarioPage  } from "../pages/calendario/calendario";
+import {CalendarioPage} from "../pages/calendario/calendario";
 import { EquipoPage } from "../pages/equipo/equipo";
 import { JugadoresPage } from '../pages/jugadores/jugadores';
 import { JornadasPage } from '../pages/jornadas/jornadas';
@@ -21,6 +21,7 @@ import { AddJugadorPage } from "../pages/add-jugador/add-jugador";
 import { EditJugadorPage } from "../pages/edit-jugador/edit-jugador";
 import { TitularesPage } from "../pages/titulares/titulares";
 import { ModificarTitularesPage } from "../pages/modificar-titulares/modificar-titulares";
+import { NgCalendarModule } from 'ionic2-calendar';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB21kexYxz9wrwyAakBGnGOvWm2KpCbwD8",
@@ -35,7 +36,6 @@ export const firebaseConfig = {
   declarations: [
     MyApp,
     HomePage,
-    CalendarioPage,
     EquipoPage,
     JugadoresPage,
     JornadasPage,
@@ -43,21 +43,22 @@ export const firebaseConfig = {
     EditJugadorPage,
     TitularesPage,
     ModificarTitularesPage,
-    LoginPage
+    LoginPage,
+    CalendarioPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgCalendarModule
     
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    CalendarioPage,
     EquipoPage,
     JugadoresPage,
     JornadasPage,
@@ -65,7 +66,8 @@ export const firebaseConfig = {
     EditJugadorPage,
     TitularesPage,
     ModificarTitularesPage,
-    LoginPage
+    LoginPage,
+    CalendarioPage
   ],
   providers: [
     StatusBar,
