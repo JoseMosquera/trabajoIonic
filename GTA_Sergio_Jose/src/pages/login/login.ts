@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { User } from '../../models/user';
 //import { AngularFireAuth } from 'angularfire2/auth';
 import { AlertController } from 'ionic-angular';
@@ -16,7 +16,7 @@ export class LoginPage {
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl:AlertController,
-    public auth:AuthProvider) {
+    public auth:AuthProvider, private toast:ToastController,) {
   }
 
   ionViewDidLoad() {
@@ -30,6 +30,12 @@ export class LoginPage {
       buttons: ['OK']
     });
     alert.present();
+
+    this.toast.create({
+      message: 'BIENVENIDO A LA APLICACIÓN',
+      duration: 2000,
+      position: 'top'
+    }).present();
   }
 
   login()

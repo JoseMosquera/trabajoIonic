@@ -6,27 +6,16 @@
             <ion-icon name="md-arrow-back"></ion-icon>
           </button>
         </ion-buttons>
-    <ion-title>jugadores-modal</ion-title>
+    <ion-title>Jugadores titulares</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
     <h2>Titulares para esta jornada</h2>
-    <ion-list>
-    <div *ngFor="let jugador of titulares">
+    <ion-list *ngFor="let jugador of titulares">
       <ion-item>
-        <ion-label>{{ jugador.nombre }}</ion-label>
-          <ion-select [(ngModel)]="result">
-              <ion-option value="ganar">Ha ganado</ion-option>
-              <ion-option value="empatar">Ha empatado</ion-option>
-              <ion-option value="perder">Ha perdido</ion-option>
-          </ion-select>      
-          <input type="hidden" value="jugador.id">
+        <ion-label (click)="puntos(jugador)">{{ jugador.nombre }}</ion-label>
       </ion-item>
-    </div>
-    <button ion-button (click)="guardar(jugador.id)">Guardar Cambios</button>
-</ion-list>
-
+  </ion-list>
+  <h3>Puntos totales de la jornada: {{ resultadoFinal }}</h3>
 </ion-content>

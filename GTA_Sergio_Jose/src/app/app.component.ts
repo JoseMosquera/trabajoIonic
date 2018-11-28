@@ -18,6 +18,7 @@ import { MenuController } from 'ionic-angular';
 export class MyApp {
   
   rootPage:any = LoginPage;
+  home = HomePage;
   calendario = CalendarioPage;
   equipo = EquipoPage;
   jugadores = JugadoresPage;

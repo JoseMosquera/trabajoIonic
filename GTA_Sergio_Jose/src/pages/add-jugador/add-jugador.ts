@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DatosProvider } from "../../providers/datos/datos";
 import { JugadoresPage } from "../jugadores/jugadores";
 import { Jugador } from "../../interfaces/jugador.interfaces";
+import _ from 'lodash';
 
 
 @IonicPage()
@@ -30,6 +31,7 @@ export class AddJugadorPage {
     console.log(jugador);
     this.jugadores.jugadores.push(jugador);
     console.log(this.jugadores.jugadores);
+    this.jugadores.jugadores = _.orderBy(this.jugadores.jugadores, ['ptos'], ['desc']);
     this.navCtrl.setRoot(JugadoresPage); 
   }
   

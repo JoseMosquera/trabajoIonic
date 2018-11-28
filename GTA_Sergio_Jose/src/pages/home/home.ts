@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, MenuController  } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController  } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthProvider } from '../../providers/auth/auth';
 
@@ -16,16 +16,10 @@ import { JornadasPage } from '../jornadas/jornadas';
 export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private afAuth:AngularFireAuth, private toast:ToastController,
-    public auth:AuthProvider, private menuCtrl: MenuController) {
+    private afAuth:AngularFireAuth,public auth:AuthProvider, private menuCtrl: MenuController) {
   }
 
   ionViewDidLoad() {
-    this.toast.create({
-      message: 'BIENVENIDO A LA APLICACIÓN',
-      duration: 2000,
-      position: 'top'
-    }).present();
   }
 
   cerrarSesion(){

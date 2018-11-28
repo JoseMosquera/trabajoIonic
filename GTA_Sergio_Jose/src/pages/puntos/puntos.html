@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+        <button ion-button
+        icon-only (click)="volver()">
+          <ion-icon name="md-arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+    <ion-title>Puntos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Puntos</ion-label>
+      <ion-select [(ngModel)]="result">
+        <ion-option value="ganar">Ha ganado</ion-option>
+        <ion-option value="empatar">Ha empatado</ion-option>
+        <ion-option value="perder">Ha perdido</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <button ion-button (click)="guardar(jugador.id)">Guardar cambios</button>
+</ion-content>
