@@ -22,6 +22,8 @@ import { EditJugadorPage } from "../pages/edit-jugador/edit-jugador";
 import { TitularesPage } from "../pages/titulares/titulares";
 import { ModificarTitularesPage } from "../pages/modificar-titulares/modificar-titulares";
 import { NgCalendarModule } from 'ionic2-calendar';
+import { JugadoresModalPage } from '../pages/jugadores-modal/jugadores-modal';
+import { EventModalPage } from '../pages/event-modal/event-modal';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB21kexYxz9wrwyAakBGnGOvWm2KpCbwD8",
@@ -44,7 +46,8 @@ export const firebaseConfig = {
     TitularesPage,
     ModificarTitularesPage,
     LoginPage,
-    CalendarioPage
+    CalendarioPage,
+    JugadoresModalPage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +70,8 @@ export const firebaseConfig = {
     TitularesPage,
     ModificarTitularesPage,
     LoginPage,
-    CalendarioPage
+    CalendarioPage,
+    JugadoresModalPage
   ],
   providers: [
     StatusBar,

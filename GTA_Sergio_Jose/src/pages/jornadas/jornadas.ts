@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { CalendarioPage } from "../calendario/calendario";
 import { DatosProvider } from "../../providers/datos/datos";
+import { JugadoresModalPage } from "../jugadores-modal/jugadores-modal";
+
 
 
 @IonicPage()
@@ -15,10 +17,14 @@ export class JornadasPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JornadasPage');
+  }
+
+  goModal(){
+    this.navCtrl.setRoot(JugadoresModalPage);
+
   }
 
 }

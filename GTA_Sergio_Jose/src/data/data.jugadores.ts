@@ -3,7 +3,7 @@ export const JUGADORES = [
 
 {nombre:"Juan", id:2, idEquipo:2, j:0, g:0, e:0, p:0, c:0, f:0, ptos:4, titular:true},
 
-{ nombre:"Paco", id:3, idEquipo:3, j:0, g:0, e:0, p:0, c:0, f:0, ptos:6, titular:true},
+{nombre:"Paco", id:3, idEquipo:3, j:0, g:0, e:0, p:0, c:0, f:0, ptos:6, titular:true},
 
 {nombre:"Jose", id:4, idEquipo:4, j:0, g:0, e:0, p:0, c:0, f:0, ptos:2, titular:true},
 

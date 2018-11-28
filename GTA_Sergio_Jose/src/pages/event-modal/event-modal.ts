@@ -24,12 +24,14 @@ export class EventModalPage {
 
   save(){
     this.viewCtrl.dismiss(this.event);
-    jornadas: JornadasPage;
+    //jornadas: JornadasPage;
     
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventModalPage');
+
+    
   }
 
 
