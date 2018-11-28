@@ -40,5 +40,9 @@ export class JugadoresPage {
         this.jugadores.jugadores.splice(i, 1);
       }
     }
+
+
+
+    
   }
 }

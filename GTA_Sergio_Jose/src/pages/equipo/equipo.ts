@@ -20,6 +20,8 @@ export class EquipoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EquipoPage');
+
+    
   }
 
   mostrarJugadores(id){

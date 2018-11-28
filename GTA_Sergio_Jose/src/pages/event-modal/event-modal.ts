@@ -32,6 +32,9 @@ export class EventModalPage {
     console.log('ionViewDidLoad EventModalPage');
   }
 
+
+
+
   cancelar(){
     this.navCtrl.setRoot(CalendarioPage);
   }
