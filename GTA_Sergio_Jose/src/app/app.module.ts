@@ -12,7 +12,6 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import {CalendarioPage} from "../pages/calendario/calendario";
-import { EquipoPage } from "../pages/equipo/equipo";
 import { JugadoresPage } from '../pages/jugadores/jugadores';
 import { JornadasPage } from '../pages/jornadas/jornadas';
 import { HttpModule } from '@angular/http';
@@ -39,7 +38,6 @@ export const firebaseConfig = {
   declarations: [
     MyApp,
     HomePage,
-    EquipoPage,
     JugadoresPage,
     JornadasPage,
     AddJugadorPage,
@@ -64,7 +62,6 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
     HomePage,
-    EquipoPage,
     JugadoresPage,
     JornadasPage,
     AddJugadorPage,

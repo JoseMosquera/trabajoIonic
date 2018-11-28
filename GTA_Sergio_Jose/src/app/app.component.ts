@@ -7,7 +7,7 @@ import { AuthProvider } from '../providers/auth/auth';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from "../pages/home/home";
 import {CalendarioPage  } from "../pages/calendario/calendario";
-import { EquipoPage } from "../pages/equipo/equipo";
+import { TitularesPage } from "../pages/titulares/titulares";
 import { JugadoresPage } from '../pages/jugadores/jugadores';
 import { JornadasPage } from '../pages/jornadas/jornadas';
 import { MenuController } from 'ionic-angular'; 
@@ -20,7 +20,7 @@ export class MyApp {
   rootPage:any = LoginPage;
   home = HomePage;
   calendario = CalendarioPage;
-  equipo = EquipoPage;
+  equipo = TitularesPage;
   jugadores = JugadoresPage;
   jornadas =JornadasPage;
 

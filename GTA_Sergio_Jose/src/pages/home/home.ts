@@ -4,7 +4,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthProvider } from '../../providers/auth/auth';
 
 import {CalendarioPage  } from "../calendario/calendario";
-import { EquipoPage } from "../equipo/equipo";
+import { TitularesPage } from "../titulares/titulares";
 import { JugadoresPage } from '../jugadores/jugadores';
 import { JornadasPage } from '../jornadas/jornadas';
 
@@ -31,7 +31,7 @@ export class HomePage {
   }
 
   irPaginaEquipo(){
-    this.navCtrl.setRoot(EquipoPage);
+    this.navCtrl.setRoot(TitularesPage);
   }
 
   irPaginaJugadores(){
