@@ -1,12 +1,11 @@
-<!--
-  Generated template for the JugadoresModalPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
+      <ion-buttons left>
+          <button ion-button
+          icon-only (click)="volver()">
+            <ion-icon name="md-arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
     <ion-title>jugadores-modal</ion-title>
   </ion-navbar>
 
@@ -14,13 +13,20 @@
 
 
 <ion-content padding>
+    <h2>Titulares para esta jornada</h2>
     <ion-list>
-    <h2>Titulares</h2>
     <div *ngFor="let jugador of titulares">
       <ion-item>
         <ion-label>{{ jugador.nombre }}</ion-label>
+          <ion-select [(ngModel)]="result">
+              <ion-option value="ganar">Ha ganado</ion-option>
+              <ion-option value="empatar">Ha empatado</ion-option>
+              <ion-option value="perder">Ha perdido</ion-option>
+          </ion-select>      
+          <input type="hidden" value="jugador.id">
       </ion-item>
-      </div>
+    </div>
+    <button ion-button (click)="guardar(jugador.id)">Guardar Cambios</button>
 </ion-list>
 
 </ion-content>
