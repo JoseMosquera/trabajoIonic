@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import * as moment from 'moment';
 import { CalendarioPage } from '../calendario/calendario';
+import { JornadasPage } from '../jornadas/jornadas';
 
 @IonicPage()
 @Component({
@@ -19,11 +20,12 @@ export class EventModalPage {
     let preselectedDate = moment(this.navParams.get('selectedDay')).format();
     this.event.startTime = preselectedDate;
     this.event.endTime = preselectedDate;
-
   }
 
   save(){
     this.viewCtrl.dismiss(this.event);
+    jornadas: JornadasPage;
+    
   }
 
   ionViewDidLoad() {

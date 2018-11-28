@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { CalendarioPage } from "../calendario/calendario";
+import { DatosProvider } from "../../providers/datos/datos";
 
-/**
- * Generated class for the JornadasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,6 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'jornadas.html',
 })
 export class JornadasPage {
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
